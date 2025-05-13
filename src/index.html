@@ -1,5 +1,208 @@
-<center>
-<img src="new.png" width="100%"/>
-<br/>
-<img src="ceu_codecamp.jpg"/>
-</center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stanly Angelo P. Troyo - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f3f4f6;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+      background: linear-gradient(to right, #3b82f6, #2563eb);
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      color: #dbeafe;
+    }
+
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #374151;
+      font-weight: 500;
+      text-decoration: none;
+      position: relative;
+      padding: 0.5rem;
+    }
+
+    nav a::after {
+      content: "";
+      display: block;
+      height: 2px;
+      background: #2563eb;
+      width: 0;
+      transition: width 0.3s ease;
+      margin: auto;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #2563eb;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    .project {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .project h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .project p {
+      color: #4b5563;
+      margin-bottom: 0.75rem;
+    }
+
+    .project a {
+      color: #2563eb;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    #contact a {
+      color: #2563eb;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-top: 1px solid #e5e7eb;
+      font-size: 0.95rem;
+      color: #6b7280;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.25rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      nav a {
+        padding: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Stanly Angelo P. Troyo</h1>
+    <p>Web Developer • Front-End Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Stanly, a passionate Web Developer who loves turning creative ideas into efficient, interactive websites. I specialize in HTML, CSS, JavaScript, and popular frameworks like React and Vue. With an eye for detail and a focus on performance, I enjoy crafting digital experiences that are both beautiful and functional.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>E-Commerce Platform</h3>
+      <p>Built a full-featured e-commerce web application using React for the frontend and Node.js for the backend. Integrated secure Stripe payment system and optimized for fast load times.</p>
+      <a href="#">View Project →</a>
+    </div>
+
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>Designed and developed this personal portfolio with a modern responsive layout. Highlights my recent work and technical skillset using HTML, CSS, and JavaScript.</p>
+      <a href="#">View Project →</a>
+    </div>
+
+    <div class="project">
+      <h3>Task Management App</h3>
+      <p>Created a dynamic task manager using Vue.js and Firebase, featuring real-time updates, user authentication, and intuitive UI for task organization.</p>
+      <a href="#">View Project →</a>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Want to work together or have a question? Let's connect:</p>
+    <p>Email: <a href="mailto:stanly.troyo@example.com">stanly.troyo@example.com</a></p>
+    <p>Find me on <a href="#">LinkedIn</a> and <a href="#">GitHub</a>.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Stanly Angelo P. Troyo. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
